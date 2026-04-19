@@ -1,0 +1,2 @@
+- Speicherfunktionen von dem Online-Taschenrechner lassen sich nicht wiederfinden (MC, MR, M+, M-)
+(- Calculator-Klasse besitzt keine UI o.ä., sodass man nur inhaltlich vergleichen kann)

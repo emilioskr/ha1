@@ -89,6 +89,17 @@ class CalculatorTest {
     }
 
 
-    //TODO hier weitere Tests erstellen
-}
+    @Test
+    @DisplayName("should negate a positive number when pressing the negative key")
+    void testNegativeKey() {
+        Calculator calc = new Calculator();
+        calc.pressDigitKey(6);
+        calc.pressDigitKey(5);
+        calc.pressNegativeKey();
 
+        String expected = "-42";
+        String actual = calc.readScreen();
+
+        assertEquals(expected, actual);
+    }
+}
